@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		74F4E494BDEEE5635E2A20BC /* Pods_weblanc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F50D5A94106E2D23EEF8008 /* Pods_weblanc.framework */; };
 		DDEB186E201132EC0062A628 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEB186D201132EC0062A628 /* AppDelegate.swift */; };
 		DDEB1870201132EC0062A628 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEB186F201132EC0062A628 /* ViewController.swift */; };
 		DDEB1873201132EC0062A628 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDEB1871201132EC0062A628 /* Main.storyboard */; };
@@ -19,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B71276C55EEAF361B66853A /* Pods-weblanc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weblanc.release.xcconfig"; path = "Pods/Target Support Files/Pods-weblanc/Pods-weblanc.release.xcconfig"; sourceTree = "<group>"; };
+		75C931401668ABF04DAD598D /* Pods-weblanc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weblanc.debug.xcconfig"; path = "Pods/Target Support Files/Pods-weblanc/Pods-weblanc.debug.xcconfig"; sourceTree = "<group>"; };
+		7F50D5A94106E2D23EEF8008 /* Pods_weblanc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_weblanc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDEB186A201132EC0062A628 /* weblanc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weblanc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDEB186D201132EC0062A628 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDEB186F201132EC0062A628 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74F4E494BDEEE5635E2A20BC /* Pods_weblanc.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3EFBD681E9777C3DD41B2B3F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F50D5A94106E2D23EEF8008 /* Pods_weblanc.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		95C6E04E6802C9783353E31D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				75C931401668ABF04DAD598D /* Pods-weblanc.debug.xcconfig */,
+				1B71276C55EEAF361B66853A /* Pods-weblanc.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DDEB1861201132EC0062A628 = {
 			isa = PBXGroup;
 			children = (
 				DDEB186C201132EC0062A628 /* weblanc */,
 				DDEB186B201132EC0062A628 /* Products */,
+				95C6E04E6802C9783353E31D /* Pods */,
+				3EFBD681E9777C3DD41B2B3F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,9 +107,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DDEB187C201132EC0062A628 /* Build configuration list for PBXNativeTarget "weblanc" */;
 			buildPhases = (
+				77E06B9655A57A104BF2E5B1 /* [CP] Check Pods Manifest.lock */,
 				DDEB1866201132EC0062A628 /* Sources */,
 				DDEB1867201132EC0062A628 /* Frameworks */,
 				DDEB1868201132EC0062A628 /* Resources */,
+				9012F1B7AC04DCE49CA411BE /* [CP] Embed Pods Frameworks */,
+				B6B70F445AC355F7A31CB45D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -142,6 +169,62 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		77E06B9655A57A104BF2E5B1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-weblanc-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9012F1B7AC04DCE49CA411BE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-weblanc/Pods-weblanc-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-weblanc/Pods-weblanc-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6B70F445AC355F7A31CB45D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-weblanc/Pods-weblanc-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DDEB1866201132EC0062A628 /* Sources */ = {
@@ -288,6 +371,7 @@
 		};
 		DDEB187D201132EC0062A628 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75C931401668ABF04DAD598D /* Pods-weblanc.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -303,6 +387,7 @@
 		};
 		DDEB187E201132EC0062A628 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B71276C55EEAF361B66853A /* Pods-weblanc.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
