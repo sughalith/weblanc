@@ -12,6 +12,10 @@
 		DDEB1873201132EC0062A628 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDEB1871201132EC0062A628 /* Main.storyboard */; };
 		DDEB1875201132EC0062A628 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDEB1874201132EC0062A628 /* Assets.xcassets */; };
 		DDEB1878201132EC0062A628 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDEB1876201132EC0062A628 /* LaunchScreen.storyboard */; };
+		DDEB1880201134690062A628 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEB187F201134690062A628 /* LogInViewController.swift */; };
+		DDEB1882201134820062A628 /* MatchesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEB1881201134820062A628 /* MatchesViewController.swift */; };
+		DDEB1884201134940062A628 /* MatchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEB1883201134940062A628 /* MatchTableViewCell.swift */; };
+		DDEB1886201134AE0062A628 /* UpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEB1885201134AE0062A628 /* UpdateViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		DDEB1874201132EC0062A628 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DDEB1877201132EC0062A628 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DDEB1879201132EC0062A628 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDEB187F201134690062A628 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		DDEB1881201134820062A628 /* MatchesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesViewController.swift; sourceTree = "<group>"; };
+		DDEB1883201134940062A628 /* MatchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchTableViewCell.swift; sourceTree = "<group>"; };
+		DDEB1885201134AE0062A628 /* UpdateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,10 @@
 				DDEB1874201132EC0062A628 /* Assets.xcassets */,
 				DDEB1876201132EC0062A628 /* LaunchScreen.storyboard */,
 				DDEB1879201132EC0062A628 /* Info.plist */,
+				DDEB187F201134690062A628 /* LogInViewController.swift */,
+				DDEB1881201134820062A628 /* MatchesViewController.swift */,
+				DDEB1883201134940062A628 /* MatchTableViewCell.swift */,
+				DDEB1885201134AE0062A628 /* UpdateViewController.swift */,
 			);
 			path = weblanc;
 			sourceTree = "<group>";
@@ -138,6 +150,10 @@
 			files = (
 				DDEB1870201132EC0062A628 /* ViewController.swift in Sources */,
 				DDEB186E201132EC0062A628 /* AppDelegate.swift in Sources */,
+				DDEB1884201134940062A628 /* MatchTableViewCell.swift in Sources */,
+				DDEB1882201134820062A628 /* MatchesViewController.swift in Sources */,
+				DDEB1880201134690062A628 /* LogInViewController.swift in Sources */,
+				DDEB1886201134AE0062A628 /* UpdateViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
